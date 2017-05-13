@@ -41,7 +41,7 @@ $(function(){
     });
     
     if($(window).width()<480){
-       $('.navbar li').on('click', function(){
+       $('.navbar a').on('click', function(){
           $(this).closest('.navbar-toggle').click();
     });
 }
