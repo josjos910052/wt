@@ -41,7 +41,7 @@ $(function(){
     });
     
     if($(window).width()<480){
-       $('.navbar a').on('click', function(){
+       $('.navbar a:not(.dropdown-toggle)').on('click', function(){
           $('#bar .navbar-toggle').click();
     });
 }
