@@ -41,8 +41,8 @@ $(function(){
     });
     
     if($(window).width()<480){
-       $('.navbar a').on('click', function(){
-       $('.navbar-toggle').click();
+       $('.navbar li').on('click', function(){
+          $(this).closest('.navbar-toggle').click();
     });
 }
     
