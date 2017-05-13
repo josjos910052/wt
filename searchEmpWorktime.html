@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>員工工時查詢</title>
+    <link rel="stylesheet" type="text/css" href="css/searchEmpWorktime.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script src="js/searchEmpWorktime.js"></script>
+</head>
+<body>
+   <div id="cover_div" style="display:none">
+       <iframe name="wt_iframe" src=""></iframe>
+    </div>
+    <div id='e_s_wt'>
+    <h1>工時查詢</h1><hr>
+<!--       搜尋區塊-->
+        <div id="e_s_wt_select_div">
+           <form action='員工工時查詢.html'>
+               <input id="e_s_wt_month" type="month" value="2017-05" name='date' required>
+                <input id='e_s_wt_search_btn' type="submit" value="查詢">
+           </form>
+        </div>
+    <!--        搜尋結果區塊-->
+        <div id="e_s_wt_result_div">
+            <div id="wt_div" class="worktime_div">
+        
+<!--          min-w:40rem     工時標題-->
+               <form action=''>
+                   <table>
+                       <thead>
+                           <tr>
+                               <td>
+                                   日期
+                               </td>
+                               <td>
+                                   員編
+                               </td>
+                               <td>
+                                   姓名
+                               </td>
+                               <td>
+                                   星期日
+                               </td>
+                               <td>
+                                   星期一
+                               </td>
+                               <td>
+                                   星期二
+                               </td>
+                               <td>
+                                   星期三
+                               </td>
+                               <td>
+                                   星期四
+                               </td>
+                               <td>
+                                   星期五
+                               </td>
+                               <td>
+                                   星期六
+                               </td>
+                               <td>
+                                   
+                               </td>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>
+                                  <span>4/1</span>~<span>4/7</span>
+                               </td>
+                               <td>
+                                   000000
+                               </td>
+                               <td>
+                                   王曉明
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <input type="button" value="詳細">
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>
+                                   <span>4/8</span>~<span>4/14</span>
+                               </td>
+                               <td>
+                                   000000
+                               </td>
+                               <td>
+                                   王曉明
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <input type="button" value="詳細">
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>
+                                   <span>4/15</span>~<span>4/21</span>
+                               </td>
+                               <td>
+                                   000000
+                               </td>
+                               <td>
+                                   王曉明
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <input type="button" value="詳細">
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>
+                                   <span>4/22</span>~<span>4/28</span>
+                               </td>
+                               <td>
+                                   000000
+                               </td>
+                               <td>
+                                   王曉明
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <input type="button" value="詳細">
+                               </td>
+                           </tr>
+                            <tr>
+                               <td>
+                                    <span>4/29</span>~<span>5/5</span>
+                                </td>
+                               <td>
+                                   000000
+                               </td>
+                               <td>
+                                   王曉明
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td>
+                                   <span>8</span>
+                                   <span>4</span>
+                               </td>
+                               <td class="holiday">
+                                   <span></span>
+                                   <span></span>
+                               </td>
+                               <td>
+                                   <input type="button" value="詳細">
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </form>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

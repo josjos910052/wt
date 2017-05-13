@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>員工管理</title>
+    <link rel="stylesheet" type="text/css" href="css/empManage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script>
+        $(function(){    
+            $('#em_ul li').on('click',function(){
+                var id=$(this).attr('id');
+                if(!$(this).hasClass('em_li_sel')){
+                    $(this).addClass('em_li_sel').parent().siblings().find('li').removeClass('em_li_sel');
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+        <div id="e_manage">
+            <div>
+                <ul id='em_ul'>
+                    <a href="modify_employee_data.html" target="e_m_ifram"><li id="em_tab1" class="em_li_sel">員工修改</li></a><a href="em_add.html" target="e_m_ifram"><li id="em_tab2">新增員工</li></a>
+                </ul>
+                <div id='em_content_div'>
+                    <iframe name='e_m_ifram' src="modify_employee_data.html"></iframe>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

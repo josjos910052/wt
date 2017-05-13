@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>假日管理</title>
+    <link rel="stylesheet" type="text/css" href="css/holidayMaintain.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script src="js/holidayMaintain.js"></script>
+</head>
+<body>
+  <h1>假日維護</h1><hr>
+   <!--              修改區塊-->
+    <div id='hd_modify_cover_div' style="display:none">
+                   <div id='hd_modify_div'>
+                      <form target="h_iframe" action="modify_holiday_result.html">
+                         <table>
+                            <tr>
+                              <td id="hd_modify_date_span" colspan="2">-/-</td>
+                          </tr>
+                            <tr>
+                               <td>
+                                   <input id='hd_rd_normal' type="radio" name="status" class="hd_rd_normal" value='dinaryday' checked><label for="hd_rd_normal" class="hd_rd_normal">平日</label>
+                               </td>
+                               <td rowspan="2">
+                                   <textarea id='hd_reason' class='hd_reason'></textarea>
+                               </td>
+                           </tr>
+                            <tr>
+                               <td>
+                                   <input id='hd_rd_holiday' type="radio" name="status" value='holiday'  class="hd_rd_holiday"><label for="hd_rd_holiday" class="hd_rd_holiday">假日</label>
+                               </td>
+                           </tr>
+                            <tr>
+                               <td colspan="2">放假時數
+                                   <select name='time'>
+                                       <option value="8">全天</option>
+                                        <option value="7">7小時</option>
+                                        <option value="6">6小時</option>
+                                        <option value="5">5小時</option>
+                                        <option value="4">4小時</option>
+                                        <option value="3">3小時</option>
+                                        <option value="2">2小時</option>
+                                        <option value="1">1小時</option>
+                                        <option value="0">0小時</option>
+                                   </select>放假
+                               </td>
+                           </tr>
+                            <tr>
+                               <td colspan="2">
+                                   <input id='hd_submit' type="submit" value="修改" class="hd_btn">
+                                   <input id='hd_cancel' type="button" value="取消" class="hd_btn">
+                               </td>
+                           </tr>
+                         </table>  
+                      </form>
+                                            
+                   </div>
+               </div>
+    <div id="cover_div" style="display:none">
+        <iframe name="h_iframe" src="">請稍候...</iframe>
+    </div>
+    
+    <div id='holiday'>
+        <div>
+       
+            <ul id='hd_ul'>
+                    <a href='%E5%81%87%E6%97%A5%E7%AE%A1%E7%90%86.html' ><li id="hd_tab1" class="hd_li_sel">假日維護</li></a><a href='%E6%89%B9%E6%AC%A1%E5%81%87%E6%97%A5.html' target="h_iframe"><li id="hd_tab2">連假修改</li></a>
+                    <a href='modify_holiday_result.html' target="h_iframe" style="float:right"><li id="hd_tab3">年度假日新增</li></a>
+            </ul>
+            <div id='hd_content'>
+
+    <!--               日期區塊-->
+                    <div id="hd_normal" >
+                            <div id='hd_input_div'>          
+                                <input id='hd_p_month' type="button" value="&lt;">
+                                <input id='hd_input_month' type='month' value="2017-04">
+                                <input id='hd_n_month' type="button" value="&gt;">
+                            </div>
+                            <div id='hd_date'>    
+                                <table>
+                                    <tr id='hd_title_day'>
+                                        <td>星期日</td>
+                                        <td>星期一</td>
+                                        <td>星期二</td>
+                                        <td>星期三</td>
+                                        <td>星期四</td>
+                                        <td>星期五</td>
+                                        <td>星期六</td>               
+                                    </tr>
+                                    <tr>
+                                        <td class="hd_day_td holiday">
+                                                  <input class='hd_modify' type="button" value="修改" style="display:none">
+                                                   <div class="hd_day">
+                                                      <span>12</span>   
+                                                   </div>
+                                                    <p></p>
+                                                </td>   
+                                        <td class="hd_day_td">
+                                                  <input class='hd_modify' type="button" value="修改" style="display:none">
+                                                   <div class="hd_day">
+                                                      <span>12</span>   
+                                                   </div>
+                                                    <p></p>
+                                                </td>
+                                        <td class="hd_day_td">
+                                                  <input class='hd_modify' type="button" value="修改" style="display:none">
+                                                   <div class="hd_day">
+                                                      <span>12</span>   
+                                                   </div>
+                                                    <p></p>
+                                                </td>   
+                                        <td class="hd_day_td">
+                                                  <input class='hd_modify' type="button" value="修改" style="display:none">
+                                                   <div class="hd_day">
+                                                      <span>12</span>   
+                                                   </div>
+                                                    <p></p>
+                                                </td>
+                                        <td class="hd_day_td">
+                                                  <input class='hd_modify' type="button" value="修改" style="display:none">
+                                                   <div class="hd_day">
+                                                      <span>12</span>   
+                                                   </div>
+                                                    <p></p>
+                                                </td>   
+                                        <td class="hd_day_td">
+                                                  <input class='hd_modify' type="button" value="修改" style="display:none">
+                                                   <div class="hd_day">
+                                                      <span>12</span>   
+                                                   </div>
+                                                    <p></p>
+                                                </td>
+                                        <td class="hd_day_td holiday">
+                                                  <input class='hd_modify' type="button" value="修改" style="display:none">
+                                                   <div class="hd_day">
+                                                      <span>12</span>   
+                                                   </div>
+                                                    <p></p>
+                                                </td>
+                                    </tr>
+                                </table>
+                            </div>
+                    </div>  
+
+
+
+
+
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

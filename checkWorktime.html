@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工時審核</title>
+    <link rel="stylesheet" type="text/css" href="css/checkWorktime.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="js/checkWorktime.js"></script>
+</head>
+<body>
+   <div id="cover_div" style="display:none">
+       <iframe name="wt_iframe" src=""></iframe>
+    </div>
+    <h1>工時審核</h1><hr>
+   <form id='search_form' action='#'>
+      <input type="week">
+       <select>
+           <option>員工編號</option>
+           <option>員工姓名</option>
+       </select>
+       <input type="text">
+       <input type="submit" value="查詢">
+   </form>
+    
+<!--    待審資料區-->
+    <div id='content_div'>
+       <form action='工時審核.html'  id='m_form'>
+           <table>
+<!--           標題-->
+                <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>員編</td>
+                        <td>姓名</td>
+                        <td>星期日</td>
+                        <td>星期一</td>
+                        <td>星期二</td>
+                        <td>星期三</td>
+                        <td>星期四</td>
+                        <td>星期五</td>
+                        <td>星期六</td>
+                        <td>詳細</td>
+                        <td><input id='sel_all_cb' type="checkbox" class='checkbox'><label for='sel_all_cb'>全選</label></td>
+                    </tr>
+                </thead>
+
+    <!--            資料內容-->
+               <tbody>
+                   <tr>
+                       <td>
+                           <span>4/1</span>~<span>4/7</span>
+                       </td>
+                       <td>000000</td>
+                       <td>王曉明</td>
+    <!--                   日-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+    <!--                   一 -->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   二-->
+                       <td>
+                           <span>8</span>
+                           <span>3</span>
+                       </td>
+    <!--                   三-->
+                       <td>
+                           <span>7</span>
+                           <span>0</span>
+                       </td>
+    <!--                   四-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   五-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   六-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+                       <td>
+                           <input class='detial_btn' type='button' value='詳細'>
+                       </td>
+                       <td>
+                           <input class='checkbox' name='ids' type='checkbox'>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <span>4/1</span>~<span>4/7</span>
+                       </td>
+                       <td>000001</td>
+                       <td>王大頭</td>
+    <!--                   日-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+    <!--                   一 -->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   二-->
+                       <td>
+                           <span>8</span>
+                           <span>3</span>
+                       </td>
+    <!--                   三-->
+                       <td>
+                           <span>7</span>
+                           <span>0</span>
+                       </td>
+    <!--                   四-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   五-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   六-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+                       <td>
+                           <input class='detial_btn' type='button' value='詳細'>
+                       </td>
+                       <td>
+                           <input class='checkbox' name='ids' type='checkbox'>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <span>4/1</span>~<span>4/7</span>
+                       </td>
+                       <td>000002</td>
+                       <td>杜麗娘</td>
+    <!--                   日-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+    <!--                   一 -->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   二-->
+                       <td>
+                           <span>8</span>
+                           <span>3</span>
+                       </td>
+    <!--                   三-->
+                       <td>
+                           <span>7</span>
+                           <span>0</span>
+                       </td>
+    <!--                   四-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   五-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   六-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+                       <td>
+                           <input class='detial_btn' type='button' value='詳細'>
+                       </td>
+                       <td>
+                           <input class='checkbox' name='ids' type='checkbox'>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <span>4/1</span>~<span>4/7</span>
+                       </td>
+                       <td>000003</td>
+                       <td>后羿</td>
+    <!--                   日-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+    <!--                   一 -->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   二-->
+                       <td>
+                           <span>8</span>
+                           <span>3</span>
+                       </td>
+    <!--                   三-->
+                       <td>
+                           <span>7</span>
+                           <span>0</span>
+                       </td>
+    <!--                   四-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   五-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   六-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+                       <td>
+                           <input class='detial_btn' type='button' value='詳細'>
+                       </td>
+                       <td>
+                           <input class='checkbox' name='ids' type='checkbox'>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <span>4/1</span>~<span>4/7</span>
+                       </td>
+                       <td>000005</td>
+                       <td>嫦娥</td>
+    <!--                   日-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+    <!--                   一 -->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   二-->
+                       <td>
+                           <span>8</span>
+                           <span>3</span>
+                       </td>
+    <!--                   三-->
+                       <td>
+                           <span>7</span>
+                           <span>0</span>
+                       </td>
+    <!--                   四-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   五-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   六-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+                       <td>
+                           <input class='detial_btn' type='button' value='詳細'>
+                       </td>
+                       <td>
+                           <input class='checkbox' name='ids' type='checkbox'>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <span>4/1</span>~<span>4/7</span>
+                       </td>
+                       <td>000006</td>
+                       <td>阿狗</td>
+    <!--                   日-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+    <!--                   一 -->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   二-->
+                       <td>
+                           <span>8</span>
+                           <span>3</span>
+                       </td>
+    <!--                   三-->
+                       <td>
+                           <span>7</span>
+                           <span>0</span>
+                       </td>
+    <!--                   四-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   五-->
+                       <td>
+                           <span>8</span>
+                           <span>4</span>
+                       </td>
+    <!--                   六-->
+                       <td class='holiday'>
+                           <span></span>
+                           <span></span>
+                       </td>
+                       <td>
+                           <input class='detial_btn' type='button' value='詳細'>
+                       </td>
+                       <td>
+                           <input class='checkbox' name='ids' type='checkbox'>
+                       </td>
+                   </tr>
+               </tbody>
+            </table>
+       </form>
+        
+    </div>
+    
+<!--    一次通過-->
+    <div id='m_wt_btn_div'>
+        <input type="submit" form='m_form' value='通過'>
+    </div>
+</body>
+</html>

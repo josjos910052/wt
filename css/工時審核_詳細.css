@@ -1,0 +1,64 @@
+html{
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+
+/*審核區塊*/
+#m_wt_div{
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 9.9%;
+    line-height: 0px;
+}
+#m_wt_div textarea{
+    position: relative;
+    top:0px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+#m_wt_div label{   
+    cursor: pointer;
+}
+#not_ok_radio{
+    margin-left: 20px;
+}
+input{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/*********************詳細工時區**************/
+iframe{
+    width: 99%;
+    height: 85%;
+    overflow-y: auto;
+}
+
+
+
+
+
+i{
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    font-size: 30px!important;
+    color: black!important;
+}
+i:hover{
+    color: #8d8d8d!important;
+}
+

@@ -1,0 +1,47 @@
+
+html{
+    font-size: 20px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+h1{
+    margin: 0.7rem 0;
+}
+td{
+    text-align: center;
+    outline: 1px solid black;
+}
+table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 5px 5px 10px 2px #9d9d9d;
+    border: 1px solid black;
+}
+.thead{
+    color: white;
+    background-color: black!important;
+    
+}
+tr:hover{
+    background-color: #dedede;
+}
+.thead td{
+    outline: 1px solid #ffffff;
+}
+
+.holiday{
+    background-color: #ffbaba!important;
+}

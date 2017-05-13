@@ -1,0 +1,62 @@
+html{
+    font-size: 20px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+h1{
+    margin: 0.7rem 0;
+}
+
+
+table{
+    width: 80%;
+    margin: 30px auto 0 auto;
+    font-weight: 800;
+    box-shadow: 5px 5px 10px 2px #9d9d9d;
+}
+table input{
+    width: 80%;
+}
+input{
+    font-size: 0.8rem;
+    text-align: center;
+}
+input:disabled{
+    background: none;
+    border: none;
+}
+td{
+    outline: 1px solid #000000;
+}
+
+textarea{
+    font-size: 0.8rem;
+}
+
+
+.bg_color{
+    background-color: #ebebeb;
+}
+
+form >div:last-child input{
+    margin: 20px 10px;
+}
+
+
+/*假日*/
+.holiday{
+    background-color: rgb(255, 230, 230)!important;
+}
+
+
+
+
