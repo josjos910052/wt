@@ -42,7 +42,7 @@ $(function(){
     
     if($(window).width()<480){
        $('.navbar a').on('click', function(){
-          $(this).closest('.navbar-toggle').click();
+          $('#bar .navbar-toggle').click();
     });
 }
     
