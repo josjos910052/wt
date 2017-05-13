@@ -40,6 +40,12 @@ $(function(){
         
     });
     
+    if($(window).width()<480){
+       $('.navbar a').on('click', function(){
+       $('.navbar-toggle').click();
+    });
+}
+    
     
 });
 
