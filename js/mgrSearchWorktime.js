@@ -1,5 +1,5 @@
 $(function(){
-    var year=$('#e_s_wt_month').val().split('-')[0];
+    var year=$('#m_s_wt_month').val().split('-')[0];
     //搜尋
     
     
@@ -14,7 +14,8 @@ $(function(){
         //選擇的該筆顏色
         $this_tr.addClass('select').siblings().removeClass('select');
         
-        var date=year+'-'+month+'-'+day
+        var date=year+'-'+month+'-'+day;
+        
         //src要改
         var src='detailWorktime.html?date='+date+'&id='+id;
         
@@ -24,6 +25,4 @@ $(function(){
     $('#cover_div').on('click',function(){
         $(this).stop().fadeOut(300).hide(0);
     })
-    
-    
 });

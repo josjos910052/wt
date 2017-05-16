@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/empAdd.css"type="text/css">
+</head>
+<body>
+	<h1>新增員工</h1>
+	<hr>
+	<form action="empAdd1.html">
+
+		<table>
+			<tr>  
+				<td class="bg_b_cl_w">員編:</td> 
+				<td><input id='e_id'type="text"name="e_id"value="000001" disabled='disabled'></td>
+				<td class="bg_b_cl_w">姓名:</td>
+				<td><input type="text"name="name"value="王曉明"></td>
+				  
+			</tr>
+			<tr>  
+				<td class="bg_b_cl_w">身分證:</td> 
+				<td><input type="text"name="id"value="A123456789"></td>
+				<td class="bg_b_cl_w">職位:</td>
+				<td>
+				    <input id="m" type="radio"name="radio1" value="manager"><label for="m">主管</label>
+					<input id="e" type="radio"name="radio1" value="employee" checked><label for="e">員工</label>
+					<input id="s" type="checkbox"name="sys" value="on"><label for="s">系統管理員</label>
+				</td>
+			</tr>
+			<tr>  
+				<td class="bg_b_cl_w">email:</td> 
+				<td colspan="3">
+				    <input type="text" name="email" value="A12345@yahoo.com.tw">
+				</td> 
+			</tr>
+			
+    	</table>
+		<input id="submit" type="submit" value="新增">
+	</form>
+</body>
+</html>

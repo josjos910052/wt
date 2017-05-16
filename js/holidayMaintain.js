@@ -89,7 +89,10 @@ $(function(){
         
     });
     
-    
+    //關閉cover_div
+    $('#cover_div').on('click',function(){
+        $(this).stop().fadeOut(300).hide(0);
+    });
  
     
     $('#hd_year,#hd_modify_div').on('click',function(e){

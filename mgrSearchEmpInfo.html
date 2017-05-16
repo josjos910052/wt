@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主管查詢員工資料</title>
+    
+    <style>
+        html{
+            height: auto;
+            width: auto;
+            font-size: 20px;
+        }
+        body{
+            height:100%;
+            width:99%;
+            text-align: center;
+        }
+        h1{
+            margin: 15px 0;
+        }
+        table{
+            width: 80%;
+            margin:50px auto 0 auto;
+            box-shadow:5px 5px 20px gray; 
+
+            background-color: #ffffff;
+
+        }
+        form{
+             margin:15px auto 0 auto;
+        }
+        tr{
+            border:black 1px solid;
+        }
+        tr:first-child{
+            background:black;
+            color:white;
+
+        }
+        td{
+            min-height:50px ; 
+            min-width:90px ;
+            outline:black 1px solid;
+        }
+        tr:first-child td{
+            border-right: 1px solid white;
+
+        }
+        input{
+            font-size: 1rem;
+        }
+        select{
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>查詢員工資料</h1>
+	<hr>
+	<form action='mgrSearchEmpInfo.html'>
+		<select name='by'>
+			<option value='name'>員工姓名</option>
+			<option value='id'>員工編號</option>
+		</select>
+		<input type="text" name='input'>
+		<input type="submit" value="查詢">
+	</form>
+
+	<table>
+		<tr>  
+			<td>員編</td> 
+			<td>員工姓名</td>
+			<td>職位</td>
+			<td>身分證</td>
+			<td>email</td>
+		</tr>
+		<tr>  
+			<td>000001</td> 
+			<td>王曉明</td>
+			<td>主管(系統管理員)</td>
+			<td>A123456789</td>
+			<td>A12345@yahoo.com.tw</td>
+		</tr>
+		<tr>  
+			<td>000002</td> 
+			<td>張曉親</td>
+			<td>員工</td>
+			<td>F526175200</td>
+			<td>A11345@yahoo.com.tw</td> 
+		</tr>
+	</table>
+</body>
+</html>

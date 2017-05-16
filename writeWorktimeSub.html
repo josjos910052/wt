@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工時填寫子畫面</title>
+    <link rel="stylesheet" type="text/css" href="css/writeWorktimeSub.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script src="js/writeWorktimeSub.js"></script>
+</head>
+<body>
+    <h1>工時填寫</h1><hr>
+    <form action="writeWorktime.html">
+        <div>
+            <table>
+                <tr>
+                    <td colspan='2' class='bg_color'>日期</td>
+                    <td colspan='3'><input type='text' value='4/1~4/7' disabled></td>
+                    <td colspan='2' class='bg_color'>狀態</td>
+                    <td colspan='3'><input type='text' value='未繳交' disabled></td>
+                </tr>
+               <tr>
+                   <td colspan='2' class='bg_color'>員編</td>
+                    <td colspan='3'><input type='text' value='000000' disabled></td>
+                    <td colspan='2'  class='bg_color'>姓名</td>
+                    <td colspan='3'><input type='text' value='王曉明' disabled></td>
+               </tr>
+               <tr>
+                   <td colspan='2' class='bg_color'>未通過原因</td>
+                   <td colspan='8'><input type='text' value='你亂填喔' disabled></td>
+               </tr>
+            </table>
+    <!--           專編標題-->
+              <table id='pj_table'>
+               <tr>
+                   <td rowspan="2" colspan='1' class='bg_color'>專編</td>
+                   <td rowspan="2" colspan='4' class='bg_color'>工作內容</td>
+                   <td colspan='2' class='bg_color'>星期日</td>
+                   <td colspan='2' class='bg_color'>星期一</td>
+                   <td colspan='2' class='bg_color'>星期二</td>
+                   <td colspan='2' class='bg_color'>星期三</td>
+                   <td colspan='2' class='bg_color'>星期四</td>
+                   <td colspan='2' class='bg_color'>星期五</td>
+                   <td colspan='2' class='bg_color'>星期六</td>
+                   <td rowspan='2' class='bg_color'></td>
+               </tr>
+               <tr>
+                   <td class='bg_color'>平</td>
+                   <td class='bg_color'>加</td>
+                   <td class='bg_color'>平</td>
+                   <td class='bg_color'>加</td>
+                   <td class='bg_color'>平</td>
+                   <td class='bg_color'>加</td>
+                   <td class='bg_color'>平</td>
+                   <td class='bg_color'>加</td>
+                   <td class='bg_color'>平</td>
+                   <td class='bg_color'>加</td>
+                   <td class='bg_color'>平</td>
+                   <td class='bg_color'>加</td>
+                   <td class='bg_color'>平</td>
+                   <td class='bg_color'>加</td>
+               </tr>
+
+    <!--           工時內容-->
+               <tr>
+                   <td>
+                       <input type='text' value='dk0001' required>
+                   </td>
+                   <td colspan='4'>
+                       <textarea>不知道要填甚麼</textarea>
+                   </td>
+                   <td colspan='2' class='holiday'>
+                   </td>
+                   <td colspan='2'>
+                       <select>
+                           <option>8</option>
+                           <option>7</option>
+                           <option>6</option>
+                           <option>5</option>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                       <select>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                   </td>
+                   <td colspan='2'>
+                       <select>
+                           <option>8</option>
+                           <option>7</option>
+                           <option>6</option>
+                           <option>5</option>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                       <select>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                   </td>
+                   <td colspan='2'>
+                       <select>
+                           <option>8</option>
+                           <option>7</option>
+                           <option>6</option>
+                           <option>5</option>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                       <select>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>                   
+                   </td>
+                   <td colspan='2'>
+                       <select>
+                           <option>8</option>
+                           <option>7</option>
+                           <option>6</option>
+                           <option>5</option>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                       <select>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                   </td>
+                   <td colspan='2'>
+                       <select>
+                           <option>8</option>
+                           <option>7</option>
+                           <option>6</option>
+                           <option>5</option>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                       <select>
+                           <option>4</option>
+                           <option>3</option>
+                           <option>2</option>
+                           <option>1</option>
+                           <option>0</option>
+                       </select>
+                   </td>
+                   <td colspan='2' class='holiday'>
+                   </td>
+                   <td><input class="del_btn" type='button' value='刪除'></td>
+               </tr>
+            </table>
+        </div>
+        <div>
+            <input id='add_btn' type="button" value="增加專案">
+            <input id='save_btn' type="button" value="暫存">
+            <input id='submit' type="submit" value="提交">
+        </div>
+    </form>
+    
+</body>
+</html>

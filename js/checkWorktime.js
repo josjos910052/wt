@@ -14,7 +14,7 @@ $(function(){
         
         var id=$this_tr.find('.checkbox').val();
         
-        var src='工時審核_詳細.html?id='+id;
+        var src='checkWorktimeDetail.html?id='+id;
         $('#cover_div iframe').attr('src',src);
         $('#cover_div').stop().fadeIn(300);
     });
@@ -26,7 +26,10 @@ $(function(){
         }
     })
     
-    
+    //關閉cover_div
+    $('#cover_div').on('click',function(){
+        $(this).stop().fadeOut(300).hide(0);
+    });
     
     
 });

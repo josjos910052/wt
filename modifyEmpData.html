@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改員工資料</title>
+    <link rel="stylesheet" href="css/modifyEmpData.css"type="text/css">
+</head>
+<body>
+    <h1>修改員工資料</h1>
+	<hr>
+	<form action='modifyEmpData.html'>
+		<select name='by'>
+			<option value='name'>員工姓名</option>
+			<option value='id'>員工編號</option>
+		</select>
+		<input type="text" name='input'>
+		<input type="submit" value="查詢">
+	</form>
+
+	<table>
+		<tr>  
+			<td>員編</td> 
+			<td>員工姓名</td>
+			<td>職位</td>
+			<td>身分證</td>
+			<td>email</td>  
+			<td></td>
+
+		</tr>
+		<tr>  
+			<td>000001</td> 
+			<td>王曉明</td>
+			<td>主管(系統管理員)</td>
+			<td>A123456789</td>
+			<td>A12345@yahoo.com.tw</td> 
+			<td><a href="modifyEmpData1.html?id=000001"><input name="md"type="button" value="修改"> </a></td> 
+		</tr>
+		<tr>  
+			<td>000002</td> 
+			<td>張曉親</td>
+			<td>員工</td>
+			<td>F526175200</td>
+			<td>A11345@yahoo.com.tw</td> 
+			<td><a href="modifyEmpData1.html?id=000002"><input name="md"type="button" value="修改"> </a></td>  
+		</tr>
+	</table>
+</body>
+</html>
+

@@ -1,4 +1,4 @@
-$(function(){
+﻿$(function(){
     //測試區塊 非正是
     $('#test input').change(function(){
         var status=$(':input[name="s"]:checked').val(),
@@ -101,4 +101,3 @@ function show_ifram(){
     $('#main_row_div,#first_bar').hide();
     $('#content_row_div,#bar').show();
 }
-

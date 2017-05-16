@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>催繳工時</title>
+	
+	<link href="css/callWorktime.css" rel="stylesheet"/>
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	
+	
+     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.css">
+     
+     <script src="js/jquery-1.9.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script>
+     
+     <script>
+         $(function(){$('.btn_alert').click(function(){
+         alert("催繳成功");
+             $( "input:checked" ).each(function(){
+                $(this).parent().parent().remove();
+            });
+        });
+         
+         });
+        
+    </script>
+    <script>
+ $(document).ready(function(){
+  $("#CheckAll").click(function(){
+   if($("#CheckAll").prop("checked")){//如果全選按鈕有被選擇的話（被選擇是true）
+    $("input[name='Checkbox[]']").each(function(){
+     $(this).prop("checked",true);//把所有的核取方框的property都變成勾選
+    })
+   }else{
+    $("input[name='Checkbox[]']").each(function(){
+     $(this).prop("checked",false);//把所有的核方框的property都取消勾選
+    })
+   }
+  })
+ })
+</script>  
+	
+</head>
+<body style="text-align:center ">
+<h1>工時催繳</h1><hr>
+<div class="Aligner Aligner-item">
+
+
+<form  action="" method="get">
+<table class="table table-hover table-bordered table-text" >
+    <thead class="thead">
+    <tr class="table_tr_text">
+        <th>日期</th>
+        <th>員工編號</th>
+        <th>員工姓名</th>
+        <th>催繳/全選<input type="checkbox" class="box_all" name="CheckAll" id="CheckAll"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>4/1~4/7</td>
+        <td>000001</td>
+        <td>王曉明</td>
+        <td><input type="checkbox" class="box" name="Checkbox[]"></td>
+    </tr>
+    <tr>
+        <td>4/1~4/7</td>
+        <td>000002</td>
+        <td>王大頭</td>
+        <td><input type="checkbox" class="box"
+        name="Checkbox[]"></td>
+        </tr>
+    <tr>
+        <td>4/1~4/7</td>
+        <td>000003</td>
+        <td>阿杜</td>
+        <td><input type="checkbox" class="box"
+        name="Checkbox[]"></td>
+        </tr>
+    <tr>
+        <td>4/1~4/7</td>
+        <td>000004</td>
+        <td>ANDY</td>
+        <td><input type="checkbox" class="box"
+        name="Checkbox[]" ></td>
+        </tr>
+    <tr id="87">
+        <td>4/1~4/7</td>
+        <td>000005</td>
+        <td>郭富城</td>
+        <td><input type="checkbox" class="box"
+        name="Checkbox[]"></td>
+        </tr>
+ 
+   
+    </tbody>    
+</table>
+   <button type="submit" class="btn_alert" id="btn_submit" >催繳</button>
+    </form>
+
+
+</div>
+</body>
+</html>

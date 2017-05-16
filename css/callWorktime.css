@@ -1,0 +1,54 @@
+
+html{
+    font-size: 30px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+}
+h1{
+    margin: 2rem 0;
+    font-size:4rem;
+}
+.Aligner {
+      height: 400px;
+      
+      align-items: center;
+      justify-content: center;
+       max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+ }
+.table-text{
+text-align: center;
+}
+
+#btn_submit{
+   
+    height:30px; 
+    width:100px; 
+    text-align: center;
+    font-weight: 900;
+    
+}
+
+.box{
+    zoom: 2;
+    
+    margin-right: 0%;
+}
+.box_all{
+    zoom:2;
+    position: relative;
+   
+}
+    
